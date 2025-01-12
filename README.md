@@ -1,0 +1,4 @@
+# React Native Async Operation Cleanup
+This repository demonstrates a common error in React Native applications: improper handling of asynchronous operations within component lifecycle methods.  Specifically, it showcases the issue of missing cleanup when fetching data in `componentDidMount` and the resulting problems when the component unmounts before the fetch completes.
+The `bug.js` file contains the erroneous code, while `bugSolution.js` provides the corrected version with proper cleanup using `AbortController`.
+This example highlights the importance of managing asynchronous operations carefully in React Native to prevent unexpected errors and maintain application stability.
